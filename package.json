@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "create-users": "ts-node ./src/create_users.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@types/readable-stream": "2.3.14",
+    "@types/request": "2.48.8",
+    "@types/request-promise-native": "1.0.18"
+  },
+  "dependencies": {
+    "@looker/sdk": "24.8.0",
+    "@looker/sdk-node": "24.8.0",
+    "@looker/sdk-rtl": "21.6.1",
+    "dotenv": "^8.2.0",
+    "ts-node": "^10.9.2"
+  }
+}

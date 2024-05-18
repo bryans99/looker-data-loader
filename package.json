@@ -13,6 +13,7 @@
     "@types/request-promise-native": "1.0.18"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@looker/sdk": "24.8.0",
     "@looker/sdk-node": "24.8.0",
     "@looker/sdk-rtl": "21.6.1",

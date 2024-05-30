@@ -4,5 +4,8 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleQuote": true,
   "files.trimTrailingWhitespace": true,
-  "prettier.documentSelectors": ["*.ts"]
+  "prettier.documentSelectors": ["*.ts"],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

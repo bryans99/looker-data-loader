@@ -6,7 +6,9 @@ import { createSdk } from './session_utils';
 const createUser = async (sdk: Looker40SDK, index: number) => {
   const firstName = faker.person.firstName();
   const lastName = faker.person.lastName();
-  const email = `${firstName.charAt(0)}${lastName}_${index}@yuki.com`.toLocaleLowerCase();
+  const email = `${firstName.charAt(
+    0
+  )}${lastName}_${index}@yuki.com`.toLocaleLowerCase();
   const user = await sdk.ok(
     sdk.create_user({
       credentials_email: {
@@ -27,12 +29,12 @@ const createUser = async (sdk: Looker40SDK, index: number) => {
   if (user?.id) {
     await sdk.ok(sdk.set_user_roles(user.id, ['4']));
   }
-  console.log(`Created user ${user.id}: ${firstName} ${lastName}: ${email}`)
+  console.log(`Created user ${user.id}: ${firstName} ${lastName}: ${email}`);
 };
 
 const createUsers = async () => {
   const sdk = await createSdk();
-  for (let index = 60000; index < 60001; index++) {
+  for (let index = 1; index < 60001; index++) {
     await createUser(sdk, index);
   }
 };

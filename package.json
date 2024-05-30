@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "looker-data-loader",
   "private": true,
   "version": "1.0.0",
   "license": "UNLICENSED",

@@ -8,7 +8,8 @@
     "create-dashboards": "ts-node ./src/create_dashboards.ts",
     "create-groups": "ts-node ./src/create_groups.ts",
     "link-users-to-groups": "ts-node ./src/link_users_to_groups.ts",
-    "folder-permissions": "ts-node ./src/folder_permissions.ts"
+    "folder-permissions": "ts-node ./src/folder_permissions.ts",
+    "board": "ts-node ./src/add_lookml_dashboard_to_board_section.ts"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.4",
